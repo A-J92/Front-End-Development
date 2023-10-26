@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); 
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url("/Images/payments.png");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: 20% 10%;
+    background-position: right bottom;
+    background-color: silver;
+}
+
+.logo{
+    border-style: ridge;
+    border: 1px solid white;
+    border-radius: 75%;
+    padding: 0;
+    width: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.payments{
+    width: 20%;
+    height: 10%;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.methods{
+  width: 20%;
+  height: 10%;
+  float: right;
+}
+
+nav{
+    text-align: center;
+    border: 1px solid red;
+} 
+
+/* for navigation bar: */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+
+footer{
+    margin-top: auto;
+    text-align: left;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.bottomnav{
+    text-align: right;
+    position: absolute;
+    bottom: 8px;
+    right: 500px;
+}
+
+.bottomnavs{
+  text-align: right;
+  margin-right: 500px;
+}
+
+.payments{
+    text-align: right;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    float: right;
+}
+
+html{
+    background-color: silver;
+}
+
+.img{
+  width: 60%;
+  height: 60%;
+  left: 100;
+  position: relative;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.unlock{
+  color: black;
+  text-decoration: none;
+  font-weight: 750;
+  border: 5px outset;
+  border-color: darkgrey;
+  border-radius: 5px;
+  font-size: larger;
+  background-color: grey;
+}
+.unlock:hover{
+  border: 5px ridge;
+  color: red;
+}
+.logos{
+  width: 10%;
+  height: 10%;
+  left: 1250;
+  bottom: 400;
+  position: relative;
+}
+
+body{
+  background-color: silver;
+}
+
+.nav{
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+    border-style: ridge;
+    border: 1px solid white;
+    border-radius: 75%;
+    padding: 0;
+    width: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+  color: whitesmoke;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  float: right;
+}
+
+.cart-count{
+  position: absolute;
+  background-color: red;
+  top: -5px;
+  right: 0;
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+  line-height:20px ;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+#cart-icon{
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+img{
+  width: 100%;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2.title{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color:white;
+}
+
+.shop-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+  gap:2rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.item-box{
+  position: relative;
+  background-color: black;
+  padding: 5px;
+  box-shadow: 0 1px 4px red;
+  border-radius: 3px;
+}
+
+.pic{
+  overflow: hidden;
+}
+
+.pic:hover img{
+  transform: scale(1.5);
+}
+
+.item-img{
+  transition: 0.4s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.item-title{
+  font-size: 1rem;
+  font-weight: 600;
+  color: red;
+}
+
+.item-price{
+  font-weight:500 ;
+  color: white;
+}
+
+.add-cart{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color:white;
+  padding: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.add-cart:hover{
+  background-color:red;
+}
+  
+
+.cart{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 1px 4px black;
+  z-index: 100;
+}
+
+.cart-active{
+  right:0;
+  transition: 0.5s;
+}
+
+.cart-title{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom:10px ;
+  border-bottom: 1px solid black;
+}
+
+.cart-box{
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.cart-img{
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border:2px solid  black;
+  padding: 5px;
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;  
+}
+
+.price-box{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.cart-item-title{
+   font-size: 1rem;
+   text-transform: uppercase;
+   color:red;
+   font-weight: 500;
+}
+
+.cart-price{
+  font-weight: 500;
+}
+
+.cart-quantity{
+  border:1px solid black;
+  outline:none ;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove{
+  font-size: 24px;
+  color:red;
+  cursor: pointer;
+}
+
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.total-title{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price{
+  margin-left: 0.5rem;
+}
+
+.btn-buy{
+  padding: 12px 20px;
+  background-color: black;
+  color:white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#cart-close{
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
